@@ -1,0 +1,2 @@
+k8s.local.           IN  SOA dns.k8s.local. admin.k8s.local. 2015082541 7200 3600 1209600 3600
+*                    IN  A   127.0.0.1

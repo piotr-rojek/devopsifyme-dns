@@ -1,0 +1,14 @@
+version: "2"
+services:
+  coredns:
+    image: coredns/coredns
+    restart: always
+    command: -conf /root/Corefile
+    environment:
+      - NS_1=${NS_1:-8.8.8.8}
+      - NS_2=${NS_2:-9.9.9.9}
+      - NS_3=${NS_3:-1.1.1.1}
+    volumes:
+      - "./config:/root/"
+    ports:
+      - ${HOST_BIND:-127.0.0.1}:53:53/udp

@@ -1,0 +1,17 @@
+.:53 {
+    forward . {$NS_1} {$NS_2} {$NS_3}
+    log
+    errors
+}
+
+k8s.local:53 {
+    file /root/k8s.local.db
+    log
+    errors
+}
+
+docker.local:53 {
+    file /root/docker.local.db
+    log
+    errors
+}

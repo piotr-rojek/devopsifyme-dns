@@ -1,0 +1,2 @@
+docker.local.        IN  SOA dns.docker.local. admin.docker.local. 2015082541 7200 3600 1209600 3600
+*                    IN  A   127.0.0.1
